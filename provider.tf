@@ -9,5 +9,10 @@ variable "provider_token" {
 }
 
 provider "fakewebservices" {
+    hostname = var.provider_hostname
   token = var.provider_token
+}
+
+variable "provider_hostname" {
+  type = string
 }
