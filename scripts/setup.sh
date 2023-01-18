@@ -67,7 +67,7 @@ if [ $installedTerraformVersion -lt $minimumTerraformVersion ]; then
 fi
 
 # Set up some variables we'll need
-HOST="${1:-app.terraform.io}"
+HOST="${1:-app.staging.terraform.io}"
 BACKEND_TF=$(dirname ${BASH_SOURCE[0]})/../backend.tf
 PROVIDER_TF=$(dirname ${BASH_SOURCE[0]})/../provider.tf
 TERRAFORM_VERSION=$(terraform version -json | jq -r '.terraform_version')

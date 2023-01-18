@@ -2,10 +2,11 @@
 # For more information, see https://www.terraform.io/docs/backends/types/remote.html
 terraform {
   backend "remote" {
-    organization = "{{ORGANIZATION_NAME}}"
+    organization = "example-org-7176dc"
+    hostname = "app.staging.terraform.io"
 
     workspaces {
-      name = "{{WORKSPACE_NAME}}"
+      name = "getting-started"
     }
   }
 
